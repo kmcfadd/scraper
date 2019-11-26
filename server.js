@@ -25,7 +25,7 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 // Connect to the Mongo DB 
-var MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/mongoScraper';
+var MONGODB_URI = process.env.MONGODB_URI || 'mongodb://user:password1@ds149218.mlab.com:49218/heroku_vrql5mn3';
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
